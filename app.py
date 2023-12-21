@@ -39,7 +39,6 @@ def run_detection(image_path):
     subprocess.run([
         'python', '/Frutiripe/YOLOv5_EfficientNetLite_Web/Flask_ML/detect.py',
         '--weights', cfg_model_path,
-        '--data', data_yaml_path,
         '--img', '512',
         '--conf', '0.4',
         '--source', image_path,
